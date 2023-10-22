@@ -1,0 +1,16 @@
+* Assembler for a fictional assembly language of a fictional 14-bit CPU.
+  This assembler gets as an input a file containing assembly instructions, expands macros (preprocessing phase) and then pass 2 times on the expanded assembly file in order to
+  produce 3 output files: 1- machine instructions file, 2- entries file, 3- externals file.
+  Output files also include a file with macros being expanded.
+--------------------------------------------------------------
+* This assembler is written in C and works on Linux.
+--------------------------------------------------------------
+* The tests of the project include programs without errors and also programs that
+  every line contains an error.
+  The programs without the errors are:
+  "valid_ex1.as", "valid_ex2.as", "valid_ex3.as"
+  The programs with the errors are:
+  "invalid_ex1.as", "invalid_ex2.as", "invalid_ex3.as", "invalid_ex4.as", "invalid_ex5.as", "invalid_ex6.as" 
+  The programs without errors have also the output files ".ob", ".ent", ".ext".
+  The programs with errors have also screenshots of all errors prints and ".am" files (except for "invalid_ex6.as" which contains macros errors).
+-------------------------------------------------------------- 
